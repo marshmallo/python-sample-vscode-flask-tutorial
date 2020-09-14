@@ -92,6 +92,6 @@ stages:
               appType: webAppLinux
               deployToSlotOrASE: true
               resourceGroupName: $(resourceGroup)
-              slotName: demo-pipeline-staging
+              slotName: staging
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
               StartupCommand: 'startup.txt'
