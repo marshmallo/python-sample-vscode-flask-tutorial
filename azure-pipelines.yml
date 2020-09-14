@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '868a2af8-02fa-4cbd-a551-0d02aafeb33e'
 
   # Resource Group name
-  resourceGroup: 'Devops-Learning'
+  # resourceGroup: 'Devops-Learning'
   
   # Web app name
   webAppName: 'demo-pipeline'
@@ -90,8 +90,8 @@ stages:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               appType: webAppLinux
-              deployToSlotOrASE: true
-              resourceGroupName: $(resourceGroup)
+              # deployToSlotOrASE: true
+              # resourceGroupName: $(resourceGroup)
               slotName: staging
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
               StartupCommand: 'startup.txt'
