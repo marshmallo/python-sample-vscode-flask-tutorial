@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '868a2af8-02fa-4cbd-a551-0d02aafeb33e'
   
   # Web app name
-  webAppName: 'demo-pipeline'
+  webAppName: 'demo-pipeline/staging'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
